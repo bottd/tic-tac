@@ -6,6 +6,7 @@ function Nav({ setPlayerO, setPlayerX, setWinner }) {
   return (
     <nav className="Nav">
       <NavLink
+        className="Nav-item"
         to="/"
         onClick={() => {
           setPlayerO('');
@@ -14,7 +15,9 @@ function Nav({ setPlayerO, setPlayerX, setWinner }) {
         }}>
         Play
       </NavLink>
-      <NavLink to="/match-history">Match History</NavLink>
+      <NavLink to="/match-history" className="Nav-item">
+        Match History
+      </NavLink>
     </nav>
   );
 }

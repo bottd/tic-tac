@@ -1,0 +1,10 @@
+.Nav {
+  width: 100%;
+  display: flex;
+  background-color: #d3d3d3;
+  font-size: 24px;
+}
+
+.Nav-item {
+  padding-right: 2%;
+}
