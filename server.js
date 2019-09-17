@@ -32,7 +32,7 @@ app.post('/api/matches', async (req, res) => {
 
   if (missingProps.length) {
     res.status(422).json({
-      message: `Missing ${missingProps} parameters {recipe_name: <STRING>, steps: <ARRAY>, ingredients: <ARRAY>}`,
+      message: `Missing ${missingProps} parameters {loser_name: <STRING>, winner_name: <STRING>}`,
     });
   } else {
     try {
