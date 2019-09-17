@@ -13,14 +13,30 @@ function MatchHistory() {
     }
   });
   return (
-    <div className="MatchHistory">
-      <ul>
+    <table className="MatchHistory">
+      <thead>
+        <tr>
+          <th colspan="3">Tic Tac Toe Matches</th>
+        </tr>
+        <tr>
+          <th>Winner</th>
+          <th>Loser</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
         {matches.map(match => {
           const date = new Date(match.created_at);
-          return <li>{match.winner_name} won against {match.loser_name} at {date.toLocaleString()}</li>;
+          return (
+            <tr>
+              <td>{match.winner_name}</td>
+              <td>{match.loser_name}</td>
+              <td>{date.toLocaleString()}</td>
+            </tr>
+          );
         })}
-      </ul>
-    </div>
+      </tbody>
+    </table>
   );
 }
 
