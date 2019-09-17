@@ -1,0 +1,21 @@
+{
+  "name": "tictac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "lint": "./node_modules/eslint/bin/eslint.js ./*.js",
+    "build-client": "cd client && npm i && npm run build && cd ..",
+    "postinstall": "npm run build-client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.19.4",
+    "nodemon": "^1.19.2",
+    "pg": "^7.12.1"
+  }
+}
