@@ -1,0 +1,15 @@
+.PlayerHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.name-wrapper {
+  margin: 0 1%;
+}
+
+.name-input {
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 24px;
+}
