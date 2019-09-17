@@ -38,8 +38,11 @@ function GameOver({
   return (
     <div className="GameOver">
       {!winner ? <Redirect to="/" /> : null}
-      game over {displayWinner} won and {displayLoser} lost!
+      <h1>
+        Game over {displayWinner} won and {displayLoser} lost!
+      </h1>
       <button
+        className="play-again"
         onClick={() => {
           setPlayerX('');
           setPlayerO('');
